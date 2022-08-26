@@ -1,3 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
+#root{
+  margin: 1px;
+}
+
 .App {
   text-align: center;
   padding: 72px;
@@ -8,6 +16,21 @@ body{
   align-items: center;
   color: blue;
   min-height: 100vh;
+  margin: 3%;
+  padding: 5px 5px 5px 5px;
+  height: auto;
+  display: block;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.expense-enter{
+  display: block;
+  background-color: black;
+  margin: 10px 110px 10px;
+  padding: 12px;
+  bottom: 5px;
+  position: absolute;
 }
 
 .expense-input{
@@ -17,17 +40,14 @@ body{
 }
 
 .expense-form{
-  justify-content: center;
-  bottom: 4px;
-  position: absolute;
-  flex-direction: column;
-  margin: 10px 15px auto;
-  padding: 10vh;
+ display: flex;
+ margin: 10px 15px;
 }
 
 .expense-button{
-  color: red;
+  background-color: purple;
   height: 50px;
   border-color: transparent;
   cursor: pointer;
+  width: 94%;
 }

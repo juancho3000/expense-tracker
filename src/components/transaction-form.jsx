@@ -12,7 +12,7 @@ function TransactionForm () {
     }
 
    return(
-    <div>
+    <div className="expense-enter">
         <form className="expense-form" onSubmit={handleSubmit}>
             <input
             type="text"
@@ -22,8 +22,9 @@ function TransactionForm () {
             className="expense-input"
             onChange={handleChange}
             />
-            <button className="expense-button">Add transaction</button>
+       <span></span>
         </form>
+        <button className="expense-button">Add transaction</button>
     </div>
    )
 }

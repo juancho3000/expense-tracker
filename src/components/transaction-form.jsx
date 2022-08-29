@@ -1,7 +1,12 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 
-function TransactionForm () {
+function TransactionForm (props) {
     const [input, setInput] = useState('');
+    const inputCatch = useRef(null);
+
+    useEffect(()=>{
+        inputCatch.current.focus();
+    })
 
     const handleChange = e =>{
         setInput(e.target.value)
@@ -9,7 +14,13 @@ function TransactionForm () {
 
     const handleSubmit = e => {
         e.preventDefault();
-    }
+
+        props.onSubmit({
+            id:Math.floor(Math.random() * 1000),
+            text:input
+        });
+        setInput('');
+    };
 
    return(
     <div className="expense-enter">
@@ -21,6 +32,7 @@ function TransactionForm () {
             name="text"
             className="expense-input"
             onChange={handleChange}
+            ref={inputCatch}
             />
        <span></span>
         </form>

@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
+//import History from "./history";
 
 function TransactionForm (props) {
     const [input, setInput] = useState('');
@@ -37,8 +38,8 @@ function TransactionForm (props) {
        <span></span>
         </form>
         <button className="expense-button">Add transaction</button>
+        
     </div>
    )
 }
-
 export default TransactionForm;

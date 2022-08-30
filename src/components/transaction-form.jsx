@@ -20,6 +20,7 @@ function TransactionForm (props) {
             id:Math.floor(Math.random() * 1000),
             text:input
         });
+
         setInput('');
     };
 
@@ -38,7 +39,6 @@ function TransactionForm (props) {
        <span></span>
         </form>
         <button className="expense-button">Add transaction</button>
-        
     </div>
    )
 }

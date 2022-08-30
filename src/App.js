@@ -1,11 +1,12 @@
 import './App.css';
-import TransactionForm from './components/transaction-form';
+import History from './components/history';
+//import TransactionForm from './components/transaction-form';
 
 function App() {
   return (
     <div className="App">
         This app
-        <TransactionForm/>
+        <History/>
     </div>
   );
 }

@@ -11,12 +11,10 @@
   padding: 72px;
   font-size: x-large;
   min-height: 10px;
-  display: flex;
 }
 
 body{
   align-items: center;
-  color: blue;
   min-height: 100vh;
   margin: 3%;
   padding: 5px 5px 5px 5px;
@@ -50,4 +48,9 @@ body{
   border-color: transparent;
   cursor: pointer;
   width: 94%;
+}
+
+.todo-row{
+  display: flex;
+  justify-content: center;
 }

@@ -1,26 +1,29 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect,useRef,useState} from "react";
 //import History from "./history";
 
 function TransactionForm (props) {
     const [isAmount, setIsAmount] = useState('');
     const [input, setInput] = useState('');
+
+    
     const inputCatch = useRef(null);
-    const inputAmountCatch = useRef(null);
+    // inputAmountCatch = useRef(null);
 
     useEffect(()=>{
         inputCatch.current.focus();
     })
-    useEffect(()=>{
-        inputAmountCatch.current.focus();
-    })
 
-    const handleChange = e =>{
-        setInput(e.target.value)
-    }
+    //useEffect(()=>{
+        //inputAmountCatch.current.focus();
+    //})
 
-    const handleAmount = e =>{
-        setIsAmount(e.target.value)
-    }
+    //const handleChange = e =>{
+        //setInput(e.target.value)
+    //}
+
+    //const handleAmount = e =>{
+    //    setIsAmount(e.target.value)
+    //}
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -33,6 +36,7 @@ function TransactionForm (props) {
         setInput('');
     };
 
+
    return(
     <div className="expense-enter">
         <div className="adding">Add a new transaction</div>
@@ -44,26 +48,25 @@ function TransactionForm (props) {
             value={input}
             name="text"
             className="expense-input"
-            onChange={handleChange}
+            onChange={(e) => setInput(e.target.value)}
             ref={inputCatch}
             />
             </section>
 
-            <section> 
+       <span></span>
+        </form>
+        <section> 
             <input
             type="text"
             placeholder="Enter amount..."
             value={isAmount}
             name="text"
             className="expense-amount"
-            onChange={handleAmount}
-            ref={inputAmountCatch}
+            onChange={(e)=> setIsAmount(e.target.value)}
+            
             
             />
             </section>
-       <span></span>
-        </form>
-        
         <button className="expense-button">Add transaction</button>
     </div>
    )

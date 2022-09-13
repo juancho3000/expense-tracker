@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Elimination from "./elimination";
-import Total from "./total";
+
+
 //import { emitter } from "./mensaje";
 import TransactionForm from "./transaction-form";
 
@@ -39,7 +40,7 @@ function History () {
             
         </div>
         <div className="comp-cloud">
-        <Total/>
+        
         <TransactionForm onSubmit={addingHistory}/>
         <Elimination lists={lists} 
         completeList={completeList} 

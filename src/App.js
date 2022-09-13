@@ -1,14 +1,25 @@
 import './App.css';
+import Budget from './components/budget';
+import Total from './components/total';
 import History from './components/history';
+import { ExpenseProvider } from './components/ExpenseContext';
+import ExpenseList from './components/Expense.list';
 //import TransactionForm from './components/transaction-form';
 
 function App() {
   return (
-    <div className="App">
-        This app
+    <ExpenseProvider>
+       <div className="App">
+        <h1>Expense tracker</h1>
+        <div className='expense-row'>
+        <Budget/>
+        <Total/>
+        <ExpenseList/>
         <History/>
+        </div> 
     </div>
-  );
+    </ExpenseProvider>
+  )
 }
 
 export default App;

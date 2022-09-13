@@ -9,7 +9,7 @@
 .App {
   text-align: center;
   margin: 3% 10%;
-  font-size: x-large;
+  font-size: medium;
   min-height: 10px;
 }
 
@@ -63,12 +63,22 @@ body{
 .todo-row{
   display: block;
   justify-content: center;
-  margin: 14% 0% 10% 0%;
 }
 
 .tracker-total{
   display: flex;
   justify-content: space-evenly;
+  box-shadow: 1px 1px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.gain{
+  color: greenyellow;
+}
+
+.loss{
+  color: red;
 }
 
 .ecrito{
@@ -77,14 +87,11 @@ body{
   margin:  10px 10px 6px 21%;
   padding: 5px;
   box-shadow: 1px 2px 10px;
-  height: 5vh;
 }
 
 .adding{
   display: flex;
-  height: 15vh;
   text-decoration: underline;
   text-decoration-color: lightslategray;
   text-decoration-thickness: 15%;
-  margin: 0 0 25px;
 }

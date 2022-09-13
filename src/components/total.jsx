@@ -1,19 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Total () {
-    const [todo, setTodo] = useState ([]);
-
-    const addTodo = todo =>{
-        
-    }
+const Total = () =>{
+    
 
     return(
         <div className="tracker-total">
             <section className="income-total">
-                Total amount
+               <h3>Total amount</h3>
+               <p id="money-positive" class="gain">$2.000</p>
             </section>
             <section className="expense-total">
-                Expense amount
+                <h3>Expense amount</h3>
+                <p id="money-negative" class="loss">$600</p>
             </section>
         </div>
     )

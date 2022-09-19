@@ -13,7 +13,7 @@ const Total = () =>{
         <div className="tracker-total">
             <section className="income-total">
                <h3>Money left</h3>
-               <p id="money-positive" class="gain">${budget - CalcExpenses}</p>
+               <p id="money-positive" class="gain">${budget-CalcExpenses}</p>
             </section>
             <section className="expense-total">
                 <h3>Money expent</h3>

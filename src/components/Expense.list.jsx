@@ -5,6 +5,7 @@ import { ExpenseContext } from "./ExpenseContext";
 
 const ExpenseList = () =>{
     const {expenses} = useContext(ExpenseContext) 
+    console.log(expenses);
     return(
         <ul className="group-expenses">
             {expenses.map((expenses) =>(

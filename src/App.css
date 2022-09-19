@@ -6,11 +6,26 @@
   margin: 1px;
 }
 
+.header{
+  display: flex;
+}
+
+.expense-money{
+  display: flex;
+}
+
 .App {
   text-align: center;
   margin: 3% 10%;
   font-size: medium;
   min-height: 10px;
+}
+
+.expense-history{
+  display: flex;
+  text-decoration: underline;
+  text-decoration-color: lightslategray;
+  text-decoration-thickness: 15%;
 }
 
 body{

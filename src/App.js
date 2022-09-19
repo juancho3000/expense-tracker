@@ -11,7 +11,7 @@ function App() {
   return (
     <ExpenseProvider>
        <div className="App">
-        <h1>Expense tracker</h1>
+        <h1  className='header'>Expense tracker</h1>
         <div className='expense-row'>
         <Budget/>
         <Total/>

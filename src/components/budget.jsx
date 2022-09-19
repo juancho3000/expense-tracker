@@ -5,11 +5,12 @@ const Budget = () => {
    
     const{expenses}= useContext(ExpenseContext);
     const amounts = expenses.map(expenses=>expenses.cost);
-    const totalMoney = amounts.reduce((total, item)=>(total += item.cost),).toFixed(2);
+    const totalMoney = amounts.reduce((acc, item)=>(acc += item.cost),0);
+    console.log(totalMoney)
     
     return(
         <div className="expense-money">
-            <span>Budget: ${totalMoney}</span>
+            <span>Your balance: ${totalMoney}</span>
         </div>
     )
 }

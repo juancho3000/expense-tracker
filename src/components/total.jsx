@@ -6,8 +6,9 @@ const Total = () =>{
  const {expenses, budget} = useContext(ExpenseContext);
  
  const CalcExpenses = expenses.reduce((total, item)=>{
-    return (total + item.cost);
+    return (total - total + item.cost);
  },0);
+ console.log(CalcExpenses)
 
     return(
         <div className="tracker-total">

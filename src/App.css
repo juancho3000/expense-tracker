@@ -133,6 +133,6 @@ body{
   transition: opacity 0.3s ease;
 }
 
-.list-expense:hover .delete-expense{
+li:hover .delete-expense{
   opacity: 1;
 }

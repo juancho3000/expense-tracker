@@ -8,7 +8,7 @@ const ExpenseList = () =>{
     console.log(expenses);
     return(
         <div>
-            <h2 className="expense-history">History expense</h2> 
+            <h3 className="expense-history">History</h3> 
         <ul className="group-expenses">
             {expenses.map((expenses) =>(
                <ExpenseItem

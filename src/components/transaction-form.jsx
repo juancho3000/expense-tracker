@@ -45,7 +45,7 @@ const TransactionForm =()=> {
         <h3 className="adding">Add a new transaction</h3>
         <form className="expense-form" onSubmit={handleSubmit}>
             <div className="expense-definition">
-            <label htmlFor="text">Text</label>
+            <label className="text-label" htmlFor="text">Text</label>
             <input
             type="text"
             placeholder="Enter text..."
@@ -58,7 +58,7 @@ const TransactionForm =()=> {
             </div>
 
             <div className="expense-numbers">
-            <label htmlFor="text">Amount <br/>(negative - expense, positive - income)</label>
+            <label className="amount-label" htmlFor="text">Amount <br/>(negative - expense, positive - income)</label>
             <input
             type="text"
             placeholder="Enter amount..."

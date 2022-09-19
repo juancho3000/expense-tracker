@@ -2,7 +2,7 @@ import React, {useContext,useState} from "react";
 import { ExpenseContext } from "./ExpenseContext";
 import { v4 as uuidv4 } from 'uuid';
 
-function TransactionForm (props) {
+const TransactionForm =()=> {
     const {dispatch} = useContext(ExpenseContext);
     const [isAmount, setIsAmount] = useState('');
     const [input, setInput] = useState('');
@@ -14,25 +14,29 @@ function TransactionForm (props) {
 
     
 
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        const moneyAdded = {
+        console.log( input + isAmount)
+        //alert('name' + input + 'cost' + isAmount);
+
+        const expense = {
             id: uuidv4(),
             name: input,
-            amount: parseInt(isAmount)
+            cost: isAmount
         };
         dispatch({
             type: 'ADDING',
-            payload: moneyAdded,
+            payload: expense,
         });
+
         
 
-        props.onSubmit({
-            id:Math.floor(Math.random() * 1000),
-            text:input
-        });
+       // props.onSubmit({
+            //id:Math.floor(Math.random() * 1000),
+            //text:input
+        //});
 
-        setInput('');
+        //setInput('');
     };
 
 
@@ -46,7 +50,7 @@ function TransactionForm (props) {
             type="text"
             placeholder="Enter text..."
             value={input}
-            name="text"
+            required="requiered"
             className="expense-input"
             onChange={(e) => setInput(e.target.value)}
             
@@ -59,14 +63,14 @@ function TransactionForm (props) {
             type="text"
             placeholder="Enter amount..."
             value={isAmount}
-            name="text"
+            required="requiered"
             className="expense-amount"
             onChange={(e)=> setIsAmount(e.target.value)}
             />
             </div>
+            <button  type="submit" className="expense-button" >Add transaction</button>
         </form>
         
-        <button className="expense-button" onClick={handleSubmit}>Add transaction</button>
     </div>
    )
 }

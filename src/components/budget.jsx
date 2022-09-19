@@ -3,6 +3,7 @@ import { ExpenseContext } from "./ExpenseContext";
 
 const Budget = () => {
     const{budget} = useContext(ExpenseContext)
+    
     return(
         <div className="expense-money">
             <span>Budget: ${budget}</span>

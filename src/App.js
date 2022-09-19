@@ -1,10 +1,11 @@
 import './App.css';
 import Budget from './components/budget';
 import Total from './components/total';
-import History from './components/history';
+//import History from './components/history';
 import { ExpenseProvider } from './components/ExpenseContext';
 import ExpenseList from './components/Expense.list';
-//import TransactionForm from './components/transaction-form';
+import TransactionForm from './components/transaction-form';
+
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Budget/>
         <Total/>
         <ExpenseList/>
-        <History/>
+        <TransactionForm/>
         </div> 
     </div>
     </ExpenseProvider>

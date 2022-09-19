@@ -4,7 +4,7 @@ import React from "react";
 const ExpenseItem = (props) =>{
     const logicSigns = props.cost < 0 ? '-' : '+';
     return(
-        <li className="list-expense">
+        <li className={props.cost < 0 ? 'minus' : 'plus'}>
             {props.name}
             <div>
                 <span className="group-list">

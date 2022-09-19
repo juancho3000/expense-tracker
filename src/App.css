@@ -102,7 +102,7 @@ body{
   list-style-type: none;
 }
 
-.list-expense{
+.group-expenses li {
   width: 60%;
   border-color: black;
   margin:  10px 10px 6px 21%;
@@ -110,6 +110,14 @@ body{
   box-shadow: 1px 2px 10px;
   display: flex;
   justify-content: space-evenly;
+}
+
+.group-expenses li.plus{
+  border-right: 5px solid #2ecc71;
+}
+
+.group-expenses li.minus{
+  border-right: 5px solid #c0392b;
 }
 
 .delete-expense{

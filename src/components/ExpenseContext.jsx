@@ -18,7 +18,7 @@ const beginningState = {
     expenses: [ 
         {id:3, name:"groceries", cost:100},
         {id:4, name:"insurance", cost:100},
-        {id:5, name:"car-payments", cost:100}
+        {id:5, name:"car-payments", cost:-100}
     ],
 };
 

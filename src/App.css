@@ -111,3 +111,20 @@ body{
   display: flex;
   justify-content: space-evenly;
 }
+
+.delete-expense{
+  color: white;
+  cursor: pointer;
+  background-color: red;
+  border: 0;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  left: 25vh;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list-expense:hover .delete-expense{
+  opacity: 1;
+}

@@ -20,7 +20,7 @@ const beginningState = {
     ],
 };
 
-export const ExpenseContext = createContext();
+export const ExpenseContext = createContext(beginningState);
 
 export const ExpenseProvider = (props) => {
     const [state,dispatch] = useReducer(ExpenseReducer, beginningState);

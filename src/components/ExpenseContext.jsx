@@ -15,21 +15,21 @@ const ExpenseReducer = (state, action)=>{
 
 const beginningState = {
     
-    expenses: [ 
-    
-    ],
+    expenses: [
+       // {id: 1, name:'income', cost:'1000'},
+        //{id: 2, name:'expenses', cost:'-500'}
+    ]
 };
 
 export const ExpenseContext = createContext(beginningState);
 
-export const ExpenseProvider = (props) => {
+export const ExpenseProvider = ({children}) => {
     const [state,dispatch] = useReducer(ExpenseReducer, beginningState);
     return(<ExpenseContext.Provider 
         value={{
-        budget:state.budget,
         expenses:state.expenses,
         dispatch,
     }}>
-        {props.children}
+        {children}
     </ExpenseContext.Provider>)
 }; 

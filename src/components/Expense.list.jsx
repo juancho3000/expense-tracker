@@ -10,13 +10,7 @@ const ExpenseList = () =>{
         <div>
             <h3 className="expense-history">History</h3> 
         <ul className="group-expenses">
-            {expenses.map((expenses) =>(
-               <ExpenseItem
-               id={expenses.id}
-               name={expenses.name}
-               cost={expenses.cost}
-               /> 
-            ))}
+            {expenses.map(expense=>(<ExpenseItem key={expense.id} expense={expense}/>))}
         </ul>
         </div>
     )

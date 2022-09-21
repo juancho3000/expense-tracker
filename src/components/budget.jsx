@@ -5,6 +5,7 @@ export const Budget = () => {
    
     const{ expenses }= useContext(ExpenseContext);
     const amounts = expenses.map(expense=>expense.cost);
+    console.log(amounts);
     const totalMoney = amounts.reduce((total, item)=>(total += item.cost),0).toFixed(2);
     console.log(totalMoney)
     

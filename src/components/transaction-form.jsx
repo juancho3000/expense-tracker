@@ -19,16 +19,16 @@ const TransactionForm =()=> {
         console.log( input + isAmount)
         //alert('name' + input + 'cost' + isAmount);
 
-        const expense = {
+        const newExpense = {
             id: uuidv4(),
             name: input,
-            cost: isAmount
+            cost: parseInt(isAmount)
         };
         dispatch({
             type: 'ADDING',
-            payload: expense,
+            payload: newExpense,
         });
-
+        dispatch(newExpense)
         
 
        // props.onSubmit({

@@ -8,27 +8,37 @@ const ExpenseReducer = (state, action)=>{
         // eslint-disable-next-line
         expenses: [...state. expenses, action.payload],
     };
+    case 'DELETE_HISTORY': 
+    return{
+        ...state,
+        expenses: state.expenses.filter(expense => expense.id !== action.payload)
+    }
     default:
         return state;
  }
 };
 
 const beginningState = {
-    
-    expenses: [
-       // {id: 1, name:'income', cost:'1000'},
-        //{id: 2, name:'expenses', cost:'-500'}
-    ]
+    expenses: []
 };
 
 export const ExpenseContext = createContext(beginningState);
 
 export const ExpenseProvider = ({children}) => {
     const [state,dispatch] = useReducer(ExpenseReducer, beginningState);
+
+    function deleteExpenseHistory (id) {
+        dispatch({
+            type: 'DELETE_HISTORY',
+            payload: id
+        });
+    }
+
     return(<ExpenseContext.Provider 
         value={{
         expenses:state.expenses,
         dispatch,
+        deleteExpenseHistory
     }}>
         {children}
     </ExpenseContext.Provider>)

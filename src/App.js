@@ -1,5 +1,5 @@
 import './App.css';
-import Budget from './components/budget';
+import {Budget} from './components/budget';
 import Total from './components/total';
 //import History from './components/history';
 import { ExpenseProvider } from './components/ExpenseContext';

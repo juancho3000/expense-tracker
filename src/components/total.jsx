@@ -13,8 +13,9 @@ const calcIncome = amounts
 console.log(calcIncome)
 
 const calcExpense = (
-    amounts.filter(item => item < 0).reduce((total, item) => (total += item.cost), 0) * -1
+    amounts.filter(item => item < 0).reduce((total, item) => (total += item.cost),0) * -1
     ).toFixed(2);
+    
     console.log(calcExpense)
 
     return(

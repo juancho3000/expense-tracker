@@ -3,10 +3,11 @@ import { ExpenseContext } from "./ExpenseContext";
 
 export const Budget = () => {
    
+   
     const{ expenses }= useContext(ExpenseContext);
     const amounts = expenses.map(expense=>expense.cost);
     console.log(amounts);
-    const totalMoney = amounts.reduce((total, item)=>(total += item.cost),0).toFixed(2);
+    const totalMoney = amounts.reduce((acc, item) => (acc += item), 0);
     console.log(totalMoney)
     
     return(

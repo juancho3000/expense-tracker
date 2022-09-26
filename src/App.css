@@ -153,7 +153,7 @@ body{
   line-height: 20px;
   padding: 2px 5px;
   position: absolute;
-  left: 25vh;
+  left: 21vh;
   opacity: 0;
   transition: opacity 0.3s ease;
 }

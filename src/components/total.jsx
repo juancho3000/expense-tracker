@@ -10,7 +10,7 @@ const amounts = expenses.map(expense=>expense.cost);
 const calcIncome =( amounts 
     .filter(item => item > 0)
     .reduce((acc, item) => (acc += item),0)
-   ).toFixed(2);
+   );
 console.log(calcIncome)
 
 const calcExpense = ( 

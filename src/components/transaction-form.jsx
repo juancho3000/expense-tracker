@@ -7,18 +7,10 @@ const TransactionForm =()=> {
     const [isAmount, setIsAmount] = useState('');
     const [input, setInput] = useState('');
     
-    //const inputCatch = useRef(null);
-    //useEffect(()=>{
-        //inputCatch.current.focus();
-    //})
-
-    
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log( input + isAmount)
-        //alert('name' + input + 'cost' + isAmount);
-
+       
         const newExpense = {
             id: uuidv4(),
             name: input,
@@ -29,15 +21,7 @@ const TransactionForm =()=> {
             payload: newExpense,
         });
         dispatch(newExpense)
-        
-
-       // props.onSubmit({
-            //id:Math.floor(Math.random() * 1000),
-            //text:input
-        //});
-
-        //setInput('');
-    };
+    }
 
 
    return(

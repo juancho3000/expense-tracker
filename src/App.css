@@ -48,12 +48,6 @@ body{
   background-color: whitesmoke;
 }
 
-@media (max-width: 320px) {
-  .App {
-    width: 300px;
-  }
-}
-
 .expense-enter{
   bottom: 25px;
   position: absolute;

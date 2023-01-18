@@ -40,8 +40,8 @@
 
 body{
   align-items: center;
-  margin: 30px;
-  padding: 5px 5px 5px 5px;
+  margin: 1%;
+  padding: 3%;
   min-height: 100vh;
   display: block;
   justify-content: center;
@@ -98,11 +98,11 @@ body{
 }
 
 .gain{
-  color: greenyellow;
+  color: #2ecc71;
 }
 
 .loss{
-  color: red;
+  color: #c0392b;
 }
 
 .ecrito{
@@ -152,7 +152,7 @@ body{
   line-height: 20px;
   padding: 2px 5px;
   position: absolute;
-  left: 23vh;
+  left: 21vh;
   opacity: 0;
   transition: opacity 0.3s ease;
 }

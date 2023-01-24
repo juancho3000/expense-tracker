@@ -6,7 +6,6 @@ import { ExpenseProvider } from './components/ExpenseContext';
 import ExpenseList from './components/Expense.list';
 import TransactionForm from './components/transaction-form';
 
-
 function App() {
   return (
     <ExpenseProvider>

@@ -140,11 +140,11 @@ body{
 }
 
 .group-expenses li.plus{
-  border-right: 5px solid #2ecc71;
+  border-right: 10px solid #2ecc71;
 }
 
 .group-expenses li.minus{
-  border-right: 5px solid #c0392b;
+  border-right: 10px solid #c0392b;
 }
 
 .delete-expense{
@@ -155,7 +155,6 @@ body{
   line-height: 20px;
   position: absolute;
   left: 40vh;
-  opacity: 0;
   transition: opacity 0.3s ease;
 }
 

@@ -7,7 +7,7 @@ const ExpenseList = () =>{
     const {expenses} = useContext(ExpenseContext) 
     console.log(expenses);
     return(
-        <div>
+        <div className="history-layout">
             <h3 className="expense-history">History</h3> 
         <ul className="group-expenses">
             {expenses.map(expense=>(<ExpenseItem key={expense.id} expense={expense}/>))}

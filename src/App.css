@@ -162,8 +162,8 @@ body{
   background-color: red;
   border: 0;
   line-height: 20px;
-  position: absolute;
-  left: 35%;
+  position: relative;
+  left: -200px;
   transition: opacity 0.3s ease;
 }
 

@@ -25,7 +25,8 @@
 .history-layout{
   display: flex;
   flex-direction: column;
-  height: 32px;
+  max-height: 50vh;
+  overflow-y: scroll;
 }
 
 .expense-history{
@@ -132,7 +133,7 @@ body{
 .group-expenses{
   display: flex;
   flex-direction: column;
-  max-height: 40px;
+  max-height: 8vh;
   justify-content: center;
   list-style-type: none;
 }

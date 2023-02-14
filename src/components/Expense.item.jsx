@@ -13,8 +13,9 @@ const ExpenseItem = ({expense}) =>{
                 <span className="group-list">
                     {logicSigns}${Math.abs(expense.cost)}
                 </span>
-                <button className="delete-expense" onClick={()=> deleteExpenseHistory(expense.id)}>X</button>
+                
             </div>
+            <button className="delete-expense" onClick={()=> deleteExpenseHistory(expense.id)}>X</button>
         </li>
     )
 }

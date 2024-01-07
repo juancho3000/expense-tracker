@@ -3,7 +3,6 @@ import { ExpenseContext } from "./ExpenseContext";
 
 export const Budget = () => {
    
-   
     const{ expenses }= useContext(ExpenseContext);
     const amounts = expenses.map(expense=>expense.cost);
     console.log(amounts);
@@ -12,6 +11,7 @@ export const Budget = () => {
     
     return(
         <div className="expense-money">
+            <h1>Expense tracker</h1>
             <h4>Your balance</h4>
             <h4>${totalMoney}</h4>
         </div>

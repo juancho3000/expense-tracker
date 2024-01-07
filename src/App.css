@@ -6,20 +6,15 @@
   margin: 1px;
 }
 
-.header{
-  display: flex;
-  margin-top: -5%;
-}
-
 .expense-money{
   text-align: initial;
 }
 
-.App {
-  text-align: center;
-  margin: 0% 10%;
-  font-size: medium;
-  min-height: 10px;
+#expense-container{
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  flex-direction: column;
 }
 
 .history-layout{
@@ -27,6 +22,7 @@
   flex-direction: column;
   max-height: 390px;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .expense-history{
@@ -50,16 +46,16 @@ body{
   margin: 1% 10% 6% 10%;
   padding: 3% 8% 5% 8%;
   min-height: 0;
-  display: block;
-  justify-content: center;
+  height: 100vh;
   background-color: whitesmoke;
 }
 
 .expense-enter{
-  bottom: 25px;
-  position: absolute;
-  width: 45%;
-  margin: 2% 20% -4% 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
 }
 
 .expense-input{

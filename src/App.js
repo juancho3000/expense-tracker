@@ -8,18 +8,15 @@ import TransactionForm from './components/transaction-form';
 
 function App() {
   return (
-    <ExpenseProvider>
-       <div className="App">
-        <h1  className='header'>Expense tracker</h1>
-        <div className='expense-row'>
+    <div id='expense-container'>
+        <ExpenseProvider>
         <Budget/>
         <Total/>
         <ExpenseList/>
         <TransactionForm/>
-        </div> 
-    </div>
     </ExpenseProvider>
-  )
+    </div>
+ )
 }
 
 export default App;

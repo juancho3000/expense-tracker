@@ -144,7 +144,7 @@ body{
   align-items: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .group-expenses li {
     font-size: small;
     text-align: center;

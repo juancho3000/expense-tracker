@@ -11,7 +11,7 @@ export const Budget = () => {
     
     return(
         <div className="expense-money">
-            <h1>Expense tracker</h1>
+            <h1>Expense tracker app</h1>
             <h4>Your balance</h4>
             <h4>${totalMoney}</h4>
         </div>
